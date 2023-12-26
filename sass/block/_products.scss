@@ -1,0 +1,82 @@
+.products {
+    margin-top: -1px;
+
+    &__top {
+        padding: 60px 30px;
+        justify-content: space-between;
+        align-items: center;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 225px;
+            height: 156px;
+            background-image: url(/img/products/scorpion-1.svg);
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 225px;
+            height: 156px;
+            background-image: url(/img/products/scorpion-2.svg);
+        }
+    }
+
+    &__title {
+        max-width: 785px;
+        font-size: 65px;
+        line-height: 1.12;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        position: relative;
+        margin-top: -1px;
+        padding-top: 20px;
+    }
+
+    &__decorative {
+        position: absolute; 
+        left: 50%;
+        top: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: calc(100% - 40px);
+        transform: translate(-50%);
+
+        svg {
+            &:nth-child(2) {
+                transform: translate(-10px);
+            }
+
+            &:nth-child(3) {
+                transform: translate(10px);
+            }
+        }
+    }
+
+    &__ticker {
+        margin-top: -1px;
+    }
+
+    &__phrase {
+        padding: 23px 0;
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        padding-bottom: 20px;
+        gap: 10px;
+    }
+
+    &__cover {  
+        padding: 20px;
+    }
+}

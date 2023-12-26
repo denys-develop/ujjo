@@ -1,0 +1,13 @@
+.ticker-bottom {
+    &__block {
+        margin-top: -1px;
+    }
+
+    .ticker__icon {
+        margin-right: 30px;
+    }
+
+    &:last-child {
+        margin-right: 0px; 
+    }
+}

@@ -1,0 +1,17 @@
+.footer {
+    &__content {
+        margin-top: -1px;
+        padding: 20px 93px;
+        background: #CDFD3B;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 1.6;
+        text-transform: uppercase;
+    }
+}
